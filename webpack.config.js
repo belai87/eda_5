@@ -6,7 +6,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 const SVGSpriteMapPlugin = require('svg-spritemap-webpack-plugin');
 
-
 module.exports = {
     devtool: "cheap-module-source-map",
     context: path.resolve(__dirname, 'src'), // указываем в какой папке лежат все файлы (проект)
@@ -49,10 +48,6 @@ module.exports = {
         new HTMLWebpackPlugin({ // создает index.html в public с подключеныйми js c hash
             template: './index.html',
             filename: 'index.html',
-        }),
-        new HTMLWebpackPlugin({
-            template: './quiz.html',
-            filename: 'quiz.html',
         }),
         new CleanWebpackPlugin(), // чистим папку public от js c hash
         new CopyWebpackPlugin({
