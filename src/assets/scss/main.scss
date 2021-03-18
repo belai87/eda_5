@@ -17,6 +17,13 @@ header{
   top:0;
   z-index:20;
   background:$backgroundColor;
+
+  &::after{
+    position: absolute;
+    content:'';
+    background-image: url(../img/any/zero.png);
+  }
+
 }
 main{
   flex: 1 0 auto;
