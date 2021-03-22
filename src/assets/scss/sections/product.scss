@@ -1,0 +1,99 @@
+.product{
+  display: flex;
+  flex-flow: column;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: calc(25% - 20px);
+  margin:10px;
+  cursor: pointer;
+  border: 2px solid #FFF;
+
+  @media screen and (max-width: $lg){
+    width: calc(33.3% - 20px);
+  }
+
+  @media screen and (max-width: $md){
+    width: calc(50% - 20px);
+  }
+
+  @media screen and (max-width: $sm){
+    width: 100%;
+    margin:10px 0;
+    flex-flow: row nowrap;
+  }
+
+
+  &:hover,
+  &:focus{
+    border: 2px solid #FED172;
+
+    & .btn{
+      background: #87BE56;
+      color:#fff;
+    }
+  }
+
+  &_list{
+    display: flex;
+    flex-flow:row wrap;
+    margin:0 -10px 50px -10px;
+  }
+
+  &_img{
+    width:100%;
+    height:205px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $sm){
+      min-width:150px;
+      max-width: 150px;
+      height:auto;
+    }
+  }
+
+  &_group{
+    padding:20px;
+  }
+
+  &_title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    height: 48px;
+    overflow: hidden;
+
+    @media screen and (max-width: $sm){
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+  }
+
+  &_description{
+    font-size: 14px;
+    line-height: 18px;
+    color: #455A64;
+    height: 70px;
+    overflow: hidden;
+    margin-top:10px;
+
+    @media screen and (max-width: $sm){
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &_price{
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+  }
+
+  &_btn{
+
+  }
+}

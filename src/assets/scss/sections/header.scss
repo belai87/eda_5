@@ -1,0 +1,110 @@
+.header{
+
+  &_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:14px 0;
+  }
+
+  &_left{
+    display: flex;
+    align-items: center;
+  }
+
+  &_right{
+    display: flex;
+    align-items: center;
+  }
+
+  &_logo{
+    svg{
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &_phone{
+    font-weight: 600;
+    font-size: 20px;
+    color: #455A64;
+    margin-left: 50px;
+  }
+
+  &_personal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:35px;
+    svg{
+      height: 24px;
+      width: 18px;
+    }
+  }
+
+  &_city{
+    font-weight: 600;
+    font-size: 20px;
+    color: #455A64;
+    margin-left: 50px;
+  }
+
+  &_cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FF9800;
+    border-radius: 25px;
+    position: relative;
+
+
+    &-link{
+      display: flex;
+    }
+
+    & svg{
+      width: 24px;
+      height: 24px;
+    }
+
+    &-wrapper{
+      display: flex;
+      align-items: center;
+      padding:10px 16px;
+    }
+
+    &-price{
+      color:#fff;
+      position: relative;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      margin-left:35px;
+
+      &::before{
+        position: absolute;
+        content:'';
+        width: 1px;
+        height:80%;
+        background:#fff;
+        top:0;
+        left:-17px;
+      }
+    }
+
+    &-count{
+      position: absolute;
+      top:-3px;
+      right:-3px;
+      color:#fff;
+      background: #039BE5;
+      border-radius: 10px;
+      width: 20px;
+      height:20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  border-radius: 22px;
+  padding:0 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition:$transition;
+
+  &__md{
+    min-width: 140px;
+  }
+
+  &__lg{
+    min-width: 230px;
+  }
+
+  &__product{
+    font-size: 16px;
+  }
+
+  &__orange{
+    background:#FF9800;
+    color:#fff;
+  }
+
+  &__green{
+    background:#E9F3E0;
+    color:#326504;
+  }
+}

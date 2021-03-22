@@ -17,13 +17,6 @@ header{
   top:0;
   z-index:20;
   background:$backgroundColor;
-
-  &::after{
-    position: absolute;
-    content:'';
-    background-image: url(../img/any/zero.png);
-  }
-
 }
 main{
   flex: 1 0 auto;
@@ -32,7 +25,6 @@ main{
 footer{
   flex: 0 0 auto;
 }
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -50,14 +42,21 @@ footer{
     max-width: 100%;
   }
 }
-
 a{
   transition: $transition;
-
   &:hover,
   &:focus,
   &:active{
     color:$secondColor
   }
 }
+
+@import "sections/header";
+@import "sections/slider";
+@import "sections/menu";
+@import "sections/title";
+@import "sections/product";
+@import "sections/people-count";
+@import "sections/btn";
+@import "sections/tab";
 

@@ -1,0 +1,14 @@
+.menu{
+
+  &_item{
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #455A64;
+
+    &:hover,
+    &:focus{
+      color:#36A9E1;
+    }
+  }
+}
