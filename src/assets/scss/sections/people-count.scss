@@ -1,9 +1,25 @@
 .people-count{
+  @media screen and (max-width: $sm){
+    margin-top:8px;
+    width: 100%;
+  }
 
   &_label{
     font-size: 16px;
     color: #455A64;
     margin-left: 20px;
+    @media screen and (max-width: $sm){
+      display: none;
+    }
+  }
+
+  &_arrow{
+    display: none;
+    width: 16px;
+    height: 16px;
+    @media screen and (max-width: $sm){
+      display: block;
+    }
   }
 
   &_group{
@@ -14,13 +30,19 @@
     & .btn{
       position: relative;
       z-index: 2;
+      border-radius: 5px;
+
+      @media screen and (max-width: $sm){
+        font-size: 0;
+        min-width: 46px;
+      }
     }
   }
 
   &_input{
     padding:0 30px 0 20px;
     height:46px;
-    border-radius:22px 0 0 22px;
+    border-radius:5px 0 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +52,14 @@
     z-index: 1;
     border: 1px solid #ECEFF1;
     min-width: 230px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    @media screen and (max-width: $sm){
+      border-radius:5px 0 0 5px;
+      min-width: calc(100% - 23px);
+    }
 
 
     &::placeholder{

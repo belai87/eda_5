@@ -1,4 +1,27 @@
+#menu{
+  @media screen and (max-width: $md){
+    position: sticky;
+    top:-1px;
+    background:$backgroundColor;
+    z-index: 10;
+  }
+}
 .menu{
+  &_wrapper{
+    @media screen and (max-width: $md){
+      display: flex;
+      flex-flow:row nowrap;
+      overflow: hidden;
+      overflow-x: scroll;
+      padding: 1rem 0;
+      align-items: center;
+    }
+  }
+
+  &_logo{
+    width: 35px;
+    height: 35px;
+  }
 
   &_item{
     margin-right: 10px;
@@ -6,9 +29,36 @@
     font-size: 14px;
     color: #455A64;
 
+    @media screen and (max-width: $md){
+      display: flex;
+      flex: 1 0 auto;
+      padding:5px 10px;
+      background: #ECEFF1;
+      border-radius: 15px;
+    }
+
+    &__logo{
+      padding:0;
+      display: none;
+    }
+
+    &__select{
+      color: #36A9E1;
+
+      @media screen and (max-width: $md){
+        background: #FFE1B2;
+        color: #EF6C00;
+      }
+    }
+
     &:hover,
     &:focus{
       color:#36A9E1;
+
+      @media screen and (max-width: $md){
+        background: #FFE1B2;
+        color: #EF6C00;
+      }
     }
   }
 }

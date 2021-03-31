@@ -13,7 +13,7 @@ module.exports = {
         app: './index.js', // откуда забрать все настройки (index.js)
     },
     output: {
-        filename: './assets/js/[name].js',
+        filename: './assets/js/[name][hash].js',
         path: path.resolve(__dirname, './public'), // куда сложить готовый app.js
     },
     externals: './node_modules/',
@@ -43,7 +43,7 @@ module.exports = {
             }
         }),
         new MiniCssExtractPlugin({
-            filename: './assets/css/[name].css'
+            filename: './assets/css/[name][hash].css'
         }),
         new HTMLWebpackPlugin({ // создает index.html в public с подключеныйми js c hash
             template: './index.html',

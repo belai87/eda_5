@@ -1,0 +1,52 @@
+.modal{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+
+  &__active{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+
+  &_wrapper{
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding:32px;
+    position: relative;
+  }
+
+  &_close{
+    position: absolute;
+    top:24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  &_title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #455A64;
+    margin-bottom: 8px;
+  }
+
+  &_subtitle{
+    font-size: 14px;
+    line-height: 18px;
+    color: #455A64;
+    font-weight: 200;
+  }
+
+}

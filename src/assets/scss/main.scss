@@ -13,10 +13,13 @@ body {
   color:$mainColor;
 }
 header{
-  position: sticky;
-  top:0;
   z-index:20;
   background:$backgroundColor;
+  position: sticky;
+  top:-1px;
+  @media screen and (max-width: $md){
+    position: unset;
+  }
 }
 main{
   flex: 1 0 auto;
@@ -24,6 +27,7 @@ main{
 }
 footer{
   flex: 0 0 auto;
+  background:#232323;
 }
 .wrapper {
   display: flex;
@@ -40,6 +44,15 @@ footer{
 
   @media screen and (max-width:$xl){
     max-width: 100%;
+  }
+  @media screen and (max-width: $sm){
+    padding:0 10px;
+  }
+
+  &__menu{
+    @media screen and (max-width: $sm){
+      padding:0 0 0 10px;
+    }
   }
 }
 a{
@@ -59,4 +72,8 @@ a{
 @import "sections/people-count";
 @import "sections/btn";
 @import "sections/tab";
+@import "sections/modal";
+@import "sections/footer";
+@import "sections/social";
+@import "sections/cart";
 

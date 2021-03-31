@@ -10,7 +10,7 @@ $(document).ready(function(){
         percentTime;
 
    $(slider).slick({
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
@@ -19,6 +19,20 @@ $(document).ready(function(){
         variableWidth: false,
         autoplay: true,
         autoplaySpeed: 4000,
+       responsive: [
+           {
+               breakpoint: 1200,
+               settings: {
+                   centerPadding: '200px',
+               }
+           },
+           {
+               breakpoint: 767,
+               settings: {
+                   centerPadding: '30px',
+               }
+           }
+       ]
     });
 
     //$bar = $('.slider-progress .progress');

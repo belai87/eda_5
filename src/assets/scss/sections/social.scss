@@ -1,0 +1,12 @@
+.social{
+
+  &-link{
+    width:38px;
+    height:28px;
+
+    @media screen and (max-width:$md){
+      margin-right: 10%;
+    }
+
+  }
+}

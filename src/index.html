@@ -13,9 +13,10 @@
                 <div class="container">
                     <div class="header_wrapper">
                         <div class="header_left">
-                            <div class="header_logo"><svg class="logo-icon"><use xlink:href="./assets/img/sprite.svg#logo"></use></svg></div>
-                            <div class="header_city">г. Москва</div>
-                            <a href="tel:+78005504183" class="header_phone">+7 (800) 550-41-83</a>
+                            <a href="/" class="header_logo"><svg class="logo-icon"><use xlink:href="./assets/img/sprite.svg#logo"></use></svg></a>
+                            <a href="#" class="header_phone">О нас</a>
+                            <a href="#" class="header_phone">Доставка</a>
+                            <a href="#" class="header_phone">Контакты</a>
                         </div>
                         <div class="header_right">
                             <div class="header_cart">
@@ -65,10 +66,11 @@
                 </div>
             </section>
             <section id="menu">
-                <nav class="container">
+                <nav class="container  container__menu">
                     <div class="menu">
                         <div class="menu_wrapper">
-                            <a href="#" class="menu_item">Круасаны</a>
+                            <a href="/" class="menu_item menu_item__logo"><svg class="menu_logo"><use xlink:href="./assets/img/sprite.svg#logo"></use></svg></a>
+                            <a href="#" class="menu_item menu_item__select">Круасаны</a>
                             <a href="#" class="menu_item">Бургеры</a>
                             <a href="#" class="menu_item">Венские вафли</a>
                             <a href="#" class="menu_item">Пирожки</a>
@@ -87,20 +89,49 @@
                 <div class="container">
                     <div class="title_block title_block__people">
                         <div class="title_group">
-                            <div class="title">Гастробоксы из вафель</div>
+                            <div class="title">Комбо</div>
                         </div>
                         <div class="people-count">
                             <form action="">
                                 <label class="people-count_label" for="people">Количество человек</label>
                                 <div class="people-count_group">
-                                    <input id='people' class="people-count_input" name="PEOPLE" type="text" placeholder="Ввести количество человек">
-                                    <button class="btn btn__orange btn__md">Применить</button>
+                                    <input id='people' onkeyup="this.value = this.value.replace (/\D/, '')" class="people-count_input" name="PEOPLE" type="text" autocomplete="off" placeholder="Ввести количество человек">
+                                    <button class="btn btn__orange btn__md btn__people">
+                                        <svg class="people-count_arrow"><use xlink:href="./assets/img/sprite.svg#arrow"></use></svg>
+                                        Применить
+                                    </button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
+                <section>
+                    <div class="container">
 
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="title_block title_block__people">
+                        <div class="title_group">
+                            <div class="title">Комбо</div>
+                        </div>
+                        <!--<div class="people-count">
+                            <form action="">
+                                <label class="people-count_label" for="people">Количество человек</label>
+                                <div class="people-count_group">
+                                    <input id='people' onkeyup="this.value = this.value.replace (/\D/, '')" class="people-count_input" name="PEOPLE" type="text" autocomplete="off" placeholder="Ввести количество человек">
+                                    <button class="btn btn__orange btn__md btn__people">
+                                        <svg class="people-count_arrow"><use xlink:href="./assets/img/sprite.svg#arrow"></use></svg>
+                                        Применить
+                                    </button>
+                                </div>
+                            </form>
+                        </div>-->
+                    </div>
+                </div>
                 <section>
                     <div class="container">
                         <div class="product_list">
@@ -110,7 +141,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -119,7 +150,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -128,7 +159,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -137,7 +168,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -146,7 +177,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -155,7 +186,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -164,7 +195,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -173,16 +204,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
-                                </div>
-                            </div>
-                            <div class="product">
-                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
-                                <div class="product_group">
-                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
-                                    <div class="product_description">Классический американский творожный десерт</div>
-                                    <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                         </div>
@@ -195,15 +217,15 @@
                         <div class="title_group">
                             <div class="title">Гастробоксы из вафель</div>
                             <div class="tab">
-                                <div class="tab_item">Все</div>
-                                <div class="tab_item tab_item__active">Сладкие</div>
-                                <div class="tab_item">Соленые</div>
+                                <div class="tab_item" data-content="tab_1">Все</div>
+                                <div class="tab_item tab_item__active" data-content="tab_2">Сладкие</div>
+                                <div class="tab_item" data-content="tab_3">Соленые</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <section class="tab_container tab_container__active">
+                <section id="tab_1" class="tab_container">
                     <div class="container">
                         <div class="product_list">
                             <div class="product">
@@ -212,7 +234,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -221,7 +243,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -230,7 +252,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -239,7 +261,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -248,7 +270,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -257,7 +279,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -266,7 +288,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -275,7 +297,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -284,13 +306,23 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
+                                <div class="product_group">
+                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
+                                    <div class="product_description">Классический американский творожный десерт</div>
+                                    <div class="product_price">600 ₽</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="tab_container">
+
+                <section id="tab_2" class="tab_container tab_container__active">
                     <div class="container">
                         <div class="product_list">
                             <div class="product">
@@ -299,7 +331,7 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                             <div class="product">
@@ -308,7 +340,95 @@
                                     <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
                                     <div class="product_description">Классический американский творожный десерт</div>
                                     <div class="product_price">600 ₽</div>
-                                    <div class="btn btn__green product_btn btn__product">Выбрать</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
+                                <div class="product_group">
+                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
+                                    <div class="product_description">Классический американский творожный десерт</div>
+                                    <div class="product_price">600 ₽</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
+                                <div class="product_group">
+                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
+                                    <div class="product_description">Классический американский творожный десерт</div>
+                                    <div class="product_price">600 ₽</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
+                                <div class="product_group">
+                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
+                                    <div class="product_description">Классический американский творожный десерт</div>
+                                    <div class="product_price">600 ₽</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
+                                <div class="product_group">
+                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
+                                    <div class="product_description">Классический американский творожный десерт</div>
+                                    <div class="product_price">600 ₽</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
+                                <div class="product_group">
+                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
+                                    <div class="product_description">Классический американский творожный десерт</div>
+                                    <div class="product_price">600 ₽</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
+                                <div class="product_group">
+                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
+                                    <div class="product_description">Классический американский творожный десерт</div>
+                                    <div class="product_price">600 ₽</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="tab_3" class="tab_container">
+                    <div class="container">
+                        <div class="product_list">
+                            <div class="product">
+                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
+                                <div class="product_group">
+                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
+                                    <div class="product_description">Классический американский творожный десерт</div>
+                                    <div class="product_price">600 ₽</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
+                                <div class="product_group">
+                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
+                                    <div class="product_description">Классический американский творожный десерт</div>
+                                    <div class="product_price">600 ₽</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product_img" style="background-image: url(./assets/img/any/product.jpeg)"></div>
+                                <div class="product_group">
+                                    <div class="product_title">Гастробокс Раз, 12 шт и еще какой - то текст </div>
+                                    <div class="product_description">Классический американский творожный десерт</div>
+                                    <div class="product_price">600 ₽</div>
+                                    <div class="btn btn__green product_btn btn__product product_add">Выбрать</div>
                                 </div>
                             </div>
                         </div>
@@ -316,7 +436,69 @@
                 </section>
             </section>
         </main>
-        <footer>footer</footer>
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer_wrapper">
+                        <div class="footer_item footer_item__contact">
+                            <svg class="footer-logo"><use xlink:href="./assets/img/sprite.svg#logo"></use></svg>
+                        </div>
+                        <div class="footer_item">
+                            <ul>
+                                <li><a href="#" class="footer-link">Доставка</a></li>
+                                <li><a href="#" class="footer-link">Оплата</a></li>
+                                <li><a href="#" class="footer-link">Возврат</a></li>
+                                <li><a href="#" class="footer-link">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_item">
+                            <ul>
+                                <li><a href="#" class="footer-link">Политика конфиденциальности</a></li>
+                                <li><a href="#" class="footer-link">Пользовательское соглашение</a></li>
+                                <li><a href="#" class="footer-link">Оферта для физических лиц</a></li>
+                                <li><a href="#" class="footer-link">Реквизиты компании</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_item">
+                            <div class="footer_contact">
+                                <a href="tel:+78005504183" class="footer-contact footer-link">+7 (800) 550-41-83</a>
+                                <a href="mailto:moscow@eda.click" class="footer-contact footer-link">moscow@eda.click</a>
+                            </div>
+                            <div class="footer_social">
+                                <a target="_blank" href="#" class="social-link"><img width="28" src="assets/img/any/in.png" alt="in"/></a>
+                                <a target="_blank" href="#" class="social-link"><img width="28" src="assets/img/any/fb.png" alt="facebook"/></a>
+                                <a target="_blank" href="#" class="social-link"><img width="35" src="assets/img/any/vk.png" alt="vkontakte"/></a>
+                                <a target="_blank" href="#" class="social-link"><img width="28" src="assets/img/any/tw.png" alt="tw"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    © 2020 ООО «Джи Эф Си»
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal">
+        <div class="modal_wrapper">
+            <svg class="modal_close"><use xlink:href="./assets/img/sprite.svg#close"></use></svg>
+            <div class="modal_content">
+                <div class="modal_left">
+                    <div class="modal_title">Название Комбо 2</div>
+                    <div class="modal_subtitle">Содержание комбо. сколько каких позиций в комбо</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-mobile">
+        <div class="cart-mobile_price">
+            <div class="cart-mobile_text">Сумма</div>
+            <div class="cart-mobile_sum">12 300 ₽</div>
+        </div>
+        <div class="cart-mobile_basket">
+            <svg><use xlink:href="./assets/img/sprite.svg#cart"></use></svg>
+            <div class="cart-mobile_count">12</div>
+        </div>
     </div>
 </body>
 </html>

@@ -19,14 +19,28 @@
 
   @media screen and (max-width: $sm){
     width: 100%;
-    margin:10px 0;
+    margin: 0 0 20px 0;
+    padding:0 0 20px;
     flex-flow: row nowrap;
+    background: transparent;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid rgba(255, 152, 0, 0.15);
+    border-radius: 0;
   }
 
+  &:last-child{
+    @media screen and (max-width: $sm){
+      border: none;
+    }
+  }
 
   &:hover,
   &:focus{
     border: 2px solid #FED172;
+    @media screen and (max-width: $sm){
+      border: none;
+    }
 
     & .btn{
       background: #87BE56;
@@ -38,6 +52,9 @@
     display: flex;
     flex-flow:row wrap;
     margin:0 -10px 50px -10px;
+    @media screen and (max-width: $sm){
+      margin:0 0 30px 0;
+    }
   }
 
   &_img{
@@ -50,12 +67,20 @@
     @media screen and (max-width: $sm){
       min-width:150px;
       max-width: 150px;
-      height:auto;
+      background-color: #fff;
     }
+
   }
 
   &_group{
     padding:20px;
+    @media screen and (max-width: $sm){
+      justify-content: space-between;
+      padding: 0 0 0 10px;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+    }
   }
 
   &_title{
@@ -84,6 +109,7 @@
     @media screen and (max-width: $sm){
       font-size: 12px;
       line-height: 16px;
+      height: 50px;
     }
   }
 

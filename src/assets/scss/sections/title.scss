@@ -13,6 +13,11 @@
 
     &__people{
       align-items: flex-end;
+
+      @media screen and (max-width: $sm){
+        flex-flow: column;
+        align-items: flex-start;
+      }
     }
   }
 
