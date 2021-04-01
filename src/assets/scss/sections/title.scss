@@ -13,6 +13,7 @@
 
     &__people{
       align-items: flex-end;
+      margin:24px 0;
 
       @media screen and (max-width: $sm){
         flex-flow: column;

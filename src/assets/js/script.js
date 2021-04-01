@@ -59,8 +59,6 @@ $(document).ready(function(){
             }
         }
     }
-
-
     function resetProgressbar() {
         $bar.css({
             width: 0+'%'
@@ -71,3 +69,4 @@ $(document).ready(function(){
     startProgressbar();
 
 });
+

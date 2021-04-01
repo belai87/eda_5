@@ -20,6 +20,10 @@ header{
   @media screen and (max-width: $md){
     position: unset;
   }
+
+  &.relative{
+    position: relative;
+  }
 }
 main{
   flex: 1 0 auto;
@@ -76,4 +80,5 @@ a{
 @import "sections/footer";
 @import "sections/social";
 @import "sections/cart";
+@import "sections/combo";
 

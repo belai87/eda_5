@@ -68,23 +68,32 @@
             <section id="menu">
                 <nav class="container  container__menu">
                     <div class="menu">
-                        <div class="menu_wrapper">
-                            <a href="/" class="menu_item menu_item__logo"><svg class="menu_logo"><use xlink:href="./assets/img/sprite.svg#logo"></use></svg></a>
-                            <a href="#" class="menu_item menu_item__select">Круасаны</a>
-                            <a href="#" class="menu_item">Бургеры</a>
-                            <a href="#" class="menu_item">Венские вафли</a>
-                            <a href="#" class="menu_item">Пирожки</a>
-                            <a href="#" class="menu_item">Мини пицца</a>
-                            <a href="#" class="menu_item">Комбо</a>
-                            <a href="#" class="menu_item">Десерты</a>
-                            <a href="#" class="menu_item">Акции</a>
-                            <a href="#" class="menu_item">Контакты</a>
-                            <a href="#" class="menu_item">О нас</a>
+                        <div class="menu_group">
+                            <div class="menu_wrapper">
+                                <a href="/" class="menu_item menu_item__logo"><svg class="menu_logo"><use xlink:href="./assets/img/sprite.svg#logo"></use></svg></a>
+                                <a href="#" class="menu_item menu_item__select">Круасаны</a>
+                                <a href="#block_1" class="menu_item">Бургеры</a>
+                                <a href="#block_2" class="menu_item">Венские вафли</a>
+                                <a href="#block_1" class="menu_item">Пирожки</a>
+                                <a href="#block_2" class="menu_item">Мини пицца</a>
+                                <a href="#block_1" class="menu_item">Комбо</a>
+                                <a href="#block_2" class="menu_item">Десерты</a>
+                                <a href="#block_1" class="menu_item">Акции</a>
+                            </div>
+                            <div class="header_right">
+                                <div class="header_cart">
+                                    <div class="header_cart-wrapper">
+                                        <a class="header_cart-link" href="#"><svg><use xlink:href="./assets/img/sprite.svg#cart"></use></svg></a>
+                                        <div class="header_cart-price">5 070 ₽</div>
+                                        <div class="header_cart-count">12</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="header_personal"><svg><use xlink:href="./assets/img/sprite.svg#user"></use></svg></a>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </section>
-
             <section>
                 <div class="container">
                     <div class="title_block title_block__people">
@@ -93,7 +102,6 @@
                         </div>
                         <div class="people-count">
                             <form action="">
-                                <label class="people-count_label" for="people">Количество человек</label>
                                 <div class="people-count_group">
                                     <input id='people' onkeyup="this.value = this.value.replace (/\D/, '')" class="people-count_input" name="PEOPLE" type="text" autocomplete="off" placeholder="Ввести количество человек">
                                     <button class="btn btn__orange btn__md btn__people">
@@ -107,16 +115,242 @@
                 </div>
                 <section>
                     <div class="container">
+                        <div class="combo">
+                            <div class="combo_list">
+                                <div class="combo_item">
+                                    <div class="combo_header">
+                                        <div class="combo_title-group">
+                                            <div class="combo_title">Комбо 7+7</div>
+                                            <div class="combo_subtitle">8 вкусов   14 боксов</div>
+                                        </div>
 
+                                        <div class="combo_group">
+                                            <div class="combo_slider">
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_1.jpeg)"></div>
+                                                        <div class="combo_slider-count">17</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_2.jpeg)"></div>
+                                                        <div class="combo_slider-count">17</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">17</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_1.jpeg)"></div>
+                                                        <div class="combo_slider-count">27</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_2.jpeg)"></div>
+                                                        <div class="combo_slider-count">37</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_2.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_2.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="combo_gift">
+                                                <div class="combo_plus">+</div>
+                                                <div class="combo_slider-item combo_slider__gift">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="combo_control">
+                                        <div class="combo_price">5 300 ₽ <span class="combo_sale">- 50%</span></div>
+                                        <div class="btn btn__green btn__lg combo_btn">Выбрать</div>
+                                    </div>
+                                </div>
+                                <div class="combo_item">
+                                    <div class="combo_header">
+                                        <div class="combo_title-group">
+                                            <div class="combo_title">Комбо 7+7</div>
+                                            <div class="combo_subtitle">8 вкусов   14 боксов</div>
+                                        </div>
+
+                                        <div class="combo_group">
+                                            <div class="combo_slider">
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_1.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_2.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_1.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_2.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="combo_control">
+                                        <div class="combo_price">5 300 ₽ <span class="combo_sale">- 50%</span></div>
+                                        <div class="btn btn__green btn__lg combo_btn">Выбрать</div>
+                                    </div>
+                                </div>
+                                <div class="combo_item">
+                                    <div class="combo_header">
+                                        <div class="combo_title-group">
+                                            <div class="combo_title">Комбо 7+7</div>
+                                            <div class="combo_subtitle">8 вкусов   14 боксов</div>
+                                        </div>
+
+                                        <div class="combo_group">
+                                            <div class="combo_line">
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_1.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_2.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="combo_gift">
+                                                <div class="combo_plus">+</div>
+                                                <div class="combo_slider-item combo_slider__gift">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="combo_control">
+                                        <div class="combo_price">5 300 ₽ <span class="combo_sale">- 50%</span></div>
+                                        <div class="btn btn__green btn__lg combo_btn">Выбрать</div>
+                                    </div>
+                                </div>
+                                <div class="combo_item">
+                                    <div class="combo_header">
+                                        <div class="combo_title-group">
+                                            <div class="combo_title">Комбо 7+7</div>
+                                            <div class="combo_subtitle">8 вкусов   14 боксов</div>
+                                        </div>
+
+                                        <div class="combo_group">
+                                            <div class="combo_slider">
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_1.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_2.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="combo_slider-item">
+                                                    <div class="combo_slider-wrapper">
+                                                        <div class="combo_slider-img" style="background-image: url(./assets/img/any/combo_3.jpeg)"></div>
+                                                        <div class="combo_slider-count">7</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="combo_control">
+                                        <div class="combo_price">5 300 ₽ <span class="combo_sale">- 50%</span></div>
+                                        <div class="btn btn__green btn__lg combo_btn">Выбрать</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </section>
-
-            <section>
+            <section id="block_1">
                 <div class="container">
                     <div class="title_block title_block__people">
                         <div class="title_group">
-                            <div class="title">Комбо</div>
+                            <div class="title">Бургерыы</div>
                         </div>
                         <!--<div class="people-count">
                             <form action="">
@@ -211,7 +445,7 @@
                     </div>
                 </section>
             </section>
-            <section>
+            <section id="block_2">
                 <div class="container">
                     <div class="title_block title_block__people">
                         <div class="title_group">
